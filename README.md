@@ -1,37 +1,37 @@
-# api-quick-start
+# LAB - Class 34
+# Project: Putting it All Together
+## Author: Asem Attallah
 
-Template Project for starting up CRUD API with Django Rest Framework
 
-## Customization Steps
+## Setup .env requirements :
+* asgiref==3.6.0
+* certifi==2022.12.7
+* charset-normalizer==3.0.1
+* Django==4.1.5
+* django-appconf==1.0.5
+* django-cors-headers==3.13.0
+* django-environ==0.9.0
+* djangorestframework==3.14.0
+* djangorestframework-simplejwt==5.2.2
+* fire==0.5.0
+* gunicorn==20.1.0
+* idna==3.4
+* psycopg2-binary==2.9.7
+* PyJWT==2.6.0
+* python-environ==0.4.54
+* pytz==2022.7.1
+* rcssmin==1.1.1
+* requests==2.28.2
+* rjsmin==1.2.1
+* six==1.16.0
+* sqlparse==0.4.3
+* termcolor==2.2.0
+* urllib3==1.26.14
+* whitenoise==6.3.0
 
-- DO NOT migrate yet
-- add additional dependencies as needed
-  - Re-export requirements.txt as needed
-- change `CookieStands` folder to the app name of your choice
-- Search through entire code base for `CookieStand`,`CookieStands` and `CookieStands` to modify code to use your resource
-  - `project/settings.py`
-  - `project/urls.py`
-  - App's files
-    - `views.py`
-    - `urls.py`
-    - `admin.py`
-    - `serializers.py`
-    - `permissions.py`
-  - "Front" files
-    - if including a customer facing portion of the site then update/recreate:
-      - `urls_front.py`
-      - `views_front.py`
-      - template files
-      - Make sure to update project `urls.py` to add routes to the "front".
-- Update CookieStandModel with fields you need
-  - Make sure to update other modules that would be affected by Model customizations. E.g. serializers, tests, etc.
-- Rename `project/.env.sample` to `.env` and update as needed
-  - To generate secret key use `python3 -c "import secrets; print(secrets.token_urlsafe())"`
-- Run makemigrations and migrate commands when ready.
-- Run `python manage.py collectstatic`
-  - This repository includes static assets in repository. If you are using a Content Delivery Network then remove `staticfiles` from repository.
-- Optional: Update `api_tester.py`
 
-## Database
+## How to initialize/run your application 
+* python manage.py runserver
 
-**NOTE:** If you are using Postgres instead of SQLite then make sure to install `psycopg2-binary` and include in `requirements.txt`
+## How to use your library
+* pip install -r requirements.txt
